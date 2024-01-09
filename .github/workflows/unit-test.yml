@@ -1,0 +1,11 @@
+name: "Run unit test when pushing codes"
+on: ["push"]
+jobs:
+    unit-test:
+        name: unit-test
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Print a message
+                run: echo "Here is just a message"
+            -   name: Run unit test
+                run: npm test
