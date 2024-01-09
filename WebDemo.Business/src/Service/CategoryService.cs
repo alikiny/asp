@@ -1,0 +1,15 @@
+using AutoMapper;
+using WebDemo.Business.src.Abtraction;
+using WebDemo.Business.src.DTO;
+using WebDemo.Core.src.Abstraction;
+using WebDemo.Core.src.Entity;
+
+namespace WebDemo.Business.src.Service
+{
+    public class CategoryService : BaseService<Category, CategoryReadDto, CategoryCreateDto, CategoryUpdateDto>, ICategoryService
+    {
+        public CategoryService(ICategoryRepo repo, IMapper mapper) : base(repo, mapper)
+        {
+        }
+    }
+}

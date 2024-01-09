@@ -1,0 +1,6 @@
+shopify/
+bin/
+obj/
+Migrations/
+Http/
+.DS_Store
